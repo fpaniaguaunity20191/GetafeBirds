@@ -95,7 +95,7 @@ public class PajaroScript : MonoBehaviour
         Vector3 touchWorldPosition = getWorldPosition(_t);
         Debug.DrawLine(Camera.main.transform.position, touchWorldPosition, Color.red, 1000);
         RaycastHit2D rch2d = Physics2D.Raycast(Camera.main.transform.position, touchWorldPosition);
-        if (rch2d.transform != null & rch2d.transform.gameObject.name == _name)
+        if (rch2d.transform != null && rch2d.transform.gameObject.name == _name)
         {
             estaPulsado = true;
         }
